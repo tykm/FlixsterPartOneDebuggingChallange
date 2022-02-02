@@ -4,9 +4,9 @@
 ## Debugging strategies 
 
 ### Basic debugging workflow
-* Understand how to reproduce the issue 
+* Understand how to reproduce the issue
   * Retrace steps, focus on the input or sequence of inputs that caused the issue (toasts)
-* Figure out the most likely reasons the problem occurred 
+* Figure out the most likely reasons the problem occurred
   * Think about the tasks that would be happening as the app crashes and which ones you suspect might be causing this kind of crash
 * Review each suspect and narrow down until you have a culprit
   * Use logcat/toasts/debugger to track down the exact cause of the issue

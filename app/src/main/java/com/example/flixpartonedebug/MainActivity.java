@@ -10,7 +10,7 @@ import android.util.Log;
 import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.RequestParams;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
-import com.example.flixpartonedebug.adaptors.MovieAdapator;
+import com.example.flixpartonedebug.adaptors.MovieAdapter;
 import com.example.flixpartonedebug.models.Movie;
 
 import org.json.JSONArray;
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    private static final String URL = "https://api.themoviedb.org/3/m ovie/now_playing?api_key=%s";
+    private static final String URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=%s";
 
     // please note that normally we would not leave API keys inside of a file we are exposing to github
     private static final String APIKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed";
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // set up Recycler view
-        final MovieAdapator adapter = new MovieAdapator(this, movies);
+        final MovieAdapter adapter = new MovieAdapter(this, movies);
         recyclerView = findViewById(R.id.rvMain);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this) );

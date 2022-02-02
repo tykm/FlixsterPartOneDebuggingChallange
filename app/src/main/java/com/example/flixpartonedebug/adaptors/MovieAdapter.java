@@ -1,8 +1,6 @@
 package com.example.flixpartonedebug.adaptors;
 
 import android.content.Context;
-import android.nfc.Tag;
-import android.os.Debug;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,14 +19,14 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class MovieAdapator extends RecyclerView.Adapter<MovieAdapator.ViewHolder> {
+public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
 
     Context context;
     List<Movie> movies;
     private static final String TAG = "MovieAdaptor";
 
 
-    public MovieAdapator(Context context, List<Movie> movies)
+    public MovieAdapter(Context context, List<Movie> movies)
     {
         Log.i(TAG, "Creating Adaptor");
         this.context = context;
